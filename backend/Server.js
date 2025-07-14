@@ -1,3 +1,10 @@
+//
+// HTTP server for frontend delivery and weather API endpoints.
+// - Serves static frontend files (HTML, JS, CSS, etc.)
+// - Handles /api/fetch to retrieve weather data and store it in DB
+// - Handles /api/data to retrieve stored forecast data for a given location
+//
+
 const http = require('http');
 const url = require('url');
 const fs = require('fs');
