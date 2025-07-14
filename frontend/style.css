@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    padding: 2rem;
+    margin: 0;
+}
+
+#controls {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+input, button {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#status {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+#card-container {
+    position: relative;
+    width: 800px;
+    height: 200px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.weather-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+.card-section {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.main-temp {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+#forecast-graph {
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: block;
+    align-items: center;
+}

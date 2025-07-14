@@ -7,5 +7,6 @@ CREATE TABLE IF NOT EXISTS forecasts (
     rain_mm REAL,
     snow_mm REAL,
     precip_prob REAL,
-    weather_desc TEXT
+    weather_desc TEXT,
+    UNIQUE(location, time)
 );
